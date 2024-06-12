@@ -303,7 +303,7 @@ form input[type="submit"]:hover {
 section {
     animation: fadeIn 1s ease-in;
 }
-
+section{}
 /* Media Queries para hacer el sitio responsivo */
 @media (max-width: 768px) {
     header nav ul {
