@@ -1,0 +1,343 @@
+/* Reseteo de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('https://media.istockphoto.com/id/1319844646/es/vector/textura-de-cemento-gris-del-suelo-vector-3d-tel%C3%B3n-de-fondo-de-la-superficie-de-la-sala-de.jpg?s=612x612&w=0&k=20&c=7EXgExt7wJ_fZfFrqg6j8e6-pOMDcTP5KiQxUKd4JVk=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilo del main */
+main {
+    padding: 20px;
+}
+
+/* Estilo de las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ffcc00;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilo de los autos */
+.auto {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.auto:hover {
+    transform: translateY(-5px);
+}
+
+.auto h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.auto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 300px; /* Ancho máximo */
+    height: 200px; /* Alto máximo */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área */
+}
+
+.auto .detalles,
+.auto .caracteristicas,
+.auto .testimonios,
+.auto .contacto {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+.auto .detalles p,
+.auto .caracteristicas ul,
+.auto .testimonios p,
+.auto .contacto p {
+    margin-bottom: 10px;
+}
+
+.auto .caracteristicas ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.auto .testimonios p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.auto .contacto {
+    text-align: center;
+}
+
+.auto .contacto a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auto .contacto a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Estilo del footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilo de los formularios */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Estilo de los botones */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Estilo de los testimonios */
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.catalogo-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Media Queries para hacer el sitio responsivo */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .auto img {
+        width: 100%; /* Ancho máximo para pantallas pequeñas */
+        height: auto;
+    }
+
+    .auto {
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+/* Modificación del cuadro de bienvenida */
+section.hero {
+    background-color: #333; /* Cambiamos el color de fondo a gris oscuro */
+    color: #fff; /* Cambiamos el color del texto a blanco para mayor contraste */
+    padding: 40px; /* Aumentamos el padding para más espacio alrededor del texto */
+}
+
+
+}
+
